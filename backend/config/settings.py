@@ -9,6 +9,7 @@ https://docs.djangoproject.com/en/6.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/6.1/ref/settings/
 """
+
 import os
 import sys
 from pathlib import Path
@@ -24,7 +25,7 @@ env = environ.Env(
     POSTGRES_PASSWORD=(str),
     DATABASE_HOST=(str, 'postgres'),
     DATABASE_PORT=(int, 5432),
-    CORS_ALLOWED_ORIGINS=(str)
+    CORS_ALLOWED_ORIGINS=(str),
 )
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -62,7 +63,7 @@ INSTALLED_APPS = [
     'debug_toolbar',
     'django.contrib.postgres',
     'rest_framework',
-    'users'
+    'users',
 ]
 
 MIDDLEWARE = [
@@ -74,7 +75,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'debug_toolbar.middleware.DebugToolbarMiddleware'
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
 ]
 
 ROOT_URLCONF = 'config.urls'
