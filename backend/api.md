@@ -175,9 +175,9 @@ National sea-level rise for 2050 and 2100. Not county-specific, label it "Nation
 ### `GET /api/counties/{id}/commentary/`
 
 Plain-language AI text about the county, generated only from its stored values.
-Show it labelled "AI-generated". Response format TBC.
+Show it labelled "AI-generated". 
 
 ### `GET /api/lookup/?eircode=...` (stretch goal)
 
 Projections for the nearest climate grid point to an Eircode. Invalid format → `400`;
-location outside the grid → "outside coverage". May be dropped. Response format TBC.
+location outside the grid → "outside coverage".
