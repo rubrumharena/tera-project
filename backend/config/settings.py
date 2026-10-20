@@ -63,6 +63,7 @@ INSTALLED_APPS = [
     'debug_toolbar',
     'django.contrib.postgres',
     'rest_framework',
+    'drf_spectacular',
     'users',
 ]
 
@@ -173,3 +174,6 @@ CORS_ALLOWED_ORIGINS = env.list('CORS_ALLOWED_ORIGINS', default=[])
 
 # User
 AUTH_USER_MODEL = 'users.User'
+
+# REST
+REST_FRAMEWORK = {'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema'}
